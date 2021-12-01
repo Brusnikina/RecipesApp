@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/recipes_naw_graph"
+    app:startDestination="@id/randomRecipesFragment">
+
+    <fragment
+        android:id="@+id/randomRecipesFragment"
+        android:name="com.example.recipesapp.ui.fragments.RandomRecipesFragment"
+        android:label="RandomRecipesFragment" >
+        <action
+            android:id="@+id/action_randomRecipesFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/savedRecipesFragment"
+        android:name="com.example.recipesapp.ui.fragments.SavedRecipesFragment"
+        android:label="SavedRecipesFragment" >
+        <action
+            android:id="@+id/action_savedRecipesFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/searchRecipesFragment"
+        android:name="com.example.recipesapp.ui.fragments.SearchRecipesFragment"
+        android:label="SearchRecipesFragment" >
+        <action
+            android:id="@+id/action_searchRecipesFragment_to_recipeFragment"
+            app:destination="@id/recipeFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/recipeFragment"
+        android:name="com.example.recipesapp.ui.fragments.RecipeFragment"
+        android:label="RecipeFragment" >
+        <argument
+            android:name="recipe"
+            app:argType="com.example.recipesapp.models.Recipe" />
+    </fragment>
+</navigation>

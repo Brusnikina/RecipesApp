@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">RecipesApp</string>
+    <string name="recipe_saved">Recipe saved successfully</string>
+    <string name="recipe_deleted">Recipe deleted successfully</string>
+</resources>
