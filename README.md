@@ -1,5 +1,5 @@
 # RecipesApp
-RecipesApp - это приложение, которое позволяет находить рецепты блюд и сохранять их в книгу цепептов. В качестве API используется [Recipe Search API](https://developer.edamam.com/edamam-docs-recipe-api).
+RecipesApp - это приложение, которое позволяет находить рецепты блюд и сохранять их в книгу рецептов. В качестве API используется [Recipe Search API](https://developer.edamam.com/edamam-docs-recipe-api).
 
 ## Стек технологий
 ### Jetpack components:
